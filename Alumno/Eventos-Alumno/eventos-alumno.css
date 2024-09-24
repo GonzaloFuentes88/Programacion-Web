@@ -68,8 +68,8 @@ ul {
 
 .btn {
     width: 100%; /* Hacer que el botón ocupe el ancho completo del contenedor */
-    border: 2px solid #E1E7D0; /* Bordes de color azul (puedes cambiar el color) */
-    border-radius: 5px; /* Bordes redondeados */
+    border: 2px solid #E1E7D0; 
+    border-radius: 5px; 
     background-color: white; /* Color de fondo blanco */
     color: black; /* Color del texto */
     transition: background-color 0.3s, color 0.3s; /* Transiciones para hover */
