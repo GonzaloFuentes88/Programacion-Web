@@ -1,3 +1,9 @@
+.star {
+    font-size: 15px;
+    color: rgb(134, 124, 63); 
+}
+
+
 .perfil-header {
     display: flex;
     align-items: center;
