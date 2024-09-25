@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,10 @@
 	<link rel="stylesheet" href="/Empresa/Perfil-Empresa/perfil-empresa.css">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-	<script src="/Nav-bar/script.js" defer></script>
+	<script src="perfil-empresa.js" defer></script>
+	<script src="/scripts/toggleMenu.js" defer></script>
 </head>
+
 <body>
 	<nav class="navbar">
 		<div class="container-fluid">
@@ -22,7 +25,6 @@
 		</button>
 	</nav>
 
-	<!-- Menú lateral -->
 	<nav class="navbar2">
 		<div class="menu-content" id="menuContent">
 			<ul class="navbar-nav">
@@ -32,10 +34,19 @@
 				<li class="nav-item">
 					<a class="nav-link" href="/Empresa/Perfil-Empresa/perfil-empresa.html">Mi perfil</a>
 				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/Empresa/Postulaciones-Empresa/postulaciones-empresa.html">Postulaciones</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/Empresa/">Empleos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/Empresa/Reclutar-empresa/reclutar-empresa.html">Reclutar</a>
+				</li>
 			</ul>
 		</div>
 	</nav>
-	
+
 	<div class="container mt-5">
 		<div class="perfil-header">
 			<img src="/Nav-bar/perfil.jpg" alt="Foto de perfil" id="foto-perfil">
@@ -70,9 +81,9 @@
 		<div class="profile-sections">
 			<section class="habilidades mb-3">
 				<h2>Habilidades</h2>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JAVASCRIPT</li>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JAVASCRIPT</li>
 			</section>
 			<div class="right-sections">
 				<section class="experiencia mb-3">
@@ -84,7 +95,8 @@
 
 			</div>
 		</div>
-	
+
 	</div>
 </body>
+
 </html>
