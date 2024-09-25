@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // Evitar que el formulario se envíe
         event.preventDefault();
         // Obtener los valores de los inputs
-        const usuario = document.getElementById('usuario').value;
+        const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
 
         // Simular un proceso de autenticación (podrías hacer algo más complejo aquí)
-        if (usuario === "usuario@gmail.com" && password === "contraseña123") {
+        if (email === "usuario@gmail.com" && password === "contraseña123") {
             // Si los datos son correctos, redirigir a una nueva página
             window.location.href = "dashboard.html";
         } 
