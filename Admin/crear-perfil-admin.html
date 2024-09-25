@@ -14,7 +14,7 @@
     <header>
         <nav class="navbar sticky-top bg-navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="/img/logo.png" alt="Logo"></a>
+                <a class="navbar-brand" href="#"><img src="/img/logo.png" alt="logo"></a>
                 <!-- Buscador -->
                 <form class="d-none d-sm-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search " aria-label="Search">
@@ -33,7 +33,7 @@
                 </button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <img src="/img/logo.png" alt="Logo">
+                        <img src="/img/logo.png" alt="logo">
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -71,34 +71,37 @@
                         </form>
                     </div>
                 </div>
-
             </div>
         </nav>
     </header>
-    <div class="container bg-light rounded-bottom p-sm-5 p-1">
-        <h2 class="">Crear Usuario</h2>
-        <form id="form-inicio" class="" novalidate>
-            <div class="mt-5 mb-3 input-group">
-                <label for="tipoUsuario" class="input-group-text">Perfil</label>
-                <select id="tipoUsuario" class="form-select rounded-end">
-                    <option value="" disabled selected hidden>Seleccione una opción...</option>
-                    <option value="alumno">Alumno</option>
-                    <option value="empresa">Empresa</option>
-                </select>
+    <div class="container bg-body-secondary shadow-lg rounded-bottom-3">
+        <div class="row p-sm-3 pt-sm-5 p-1">
+            <div class="col">
+                <h2>Crear Usuario</h2>
+                <form id="form-inicio" class="" novalidate>
+                    <div class="mt-5 mb-3 input-group">
+                        <label for="tipoUsuario" class="input-group-text">Perfil</label>
+                        <select id="tipoUsuario" class="form-select rounded-end">
+                            <option value="" disabled selected hidden>Seleccione una opción...</option>
+                            <option value="alumno">Alumno</option>
+                            <option value="empresa">Empresa</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <label class="input-group-text" for="usuario">Usuario</label>
+                        <input type="email" name="usuario" id="usuario" class="form-control p-2" placeholder="Correo Electrónico" required>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <label class="input-group-text" for="password">Contraseña</label>
+                        <input type="password" name="password" id="password" class="form-control" placeholder="Ingrese una contraseña" required>
+                    </div>
+                    
+                    <div class="text-end mt-sm-5 pt-sm-5">
+                        <button type="submit" class="btn btn-success">Crear Usuario</button>
+                    </div>
+                </form>
             </div>
-            <div class="mb-3 input-group">
-                <label class="input-group-text" for="usuario">Usuario</label>
-                <input type="email" name="usuario" id="usuario" class="form-control p-2" placeholder="Correo Electrónico" required>
-            </div>
-            <div class="mb-3 input-group">
-                <label class="input-group-text" for="password">Contraseña</label>
-                <input type="password" name="password" id="password" class="form-control" placeholder="Ingrese una contraseña" required>
-            </div>
-            
-            <div class="text-end mt-sm-5 pt-sm-5">
-                <button type="submit" class="btn btn-success">Crear Usuario</button>
-            </div>
-        </form>
+        </div>
     </div>
     <!-- Enlace a Bootstrap y el archivo Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
