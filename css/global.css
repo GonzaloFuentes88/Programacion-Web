@@ -1,17 +1,16 @@
-.bg-inicio{
-  background-image: url('/img/bg-body.avif');
+.bg-inicio, .bg-alt {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
 
+.bg-inicio{
+  background-image: url('/img/bg-body.avif');
+}
+
 .bg-alt{
   background-image: url('/img/bg-body.svg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
 }
 
 .bg-navbar {
