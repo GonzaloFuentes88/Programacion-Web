@@ -49,7 +49,6 @@ const habilidaderror = document.getElementById('habilidaderror');
 const carreraerror = document.getElementById('carreraerror');
 const planerror = document.getElementById('planerror');
 const listaHabilidades = document.getElementById('listaHabilidades');
-
 // Función para manejar la selección de la carrera
 function handleCarreraChange() {
     const selectedCarrera = carreraSelect.value;
@@ -105,7 +104,6 @@ function handlePlanEstudiosChange() {
         materiaLabel.classList.add('d-none');
     }
 }
-
 // Función para agregar una materia aprobada
 function handleAgregarMateria() {
     const selectedMateria = materiaSelect.value;
@@ -114,7 +112,6 @@ function handleAgregarMateria() {
     if (!selectedMateria || materias.includes(selectedMateria)) {
         return; // No hacer nada si no hay materia seleccionada
     }
-
 
     const textMateria = document.createElement('li');
     textMateria.textContent = selectedMateria;
@@ -127,8 +124,9 @@ function handleAgregarMateria() {
 // Función para manejar la adición de habilidades
 function handleAddHabilidad() {
     const habilidad = habilidadSelect.value;
-
-    if (!habilidad) {
+    let habilidades = listaHabilidades.querySelectorAll('div label');
+    habilidades = Array.from(habilidades).map(habilidad => habilidad.textContent);
+    if (!habilidad || habilidades.includes(habilidad)) {
         habilidaderror.innerHTML = "Debe seleccionar alguna habilidad del listado.";
         return;
     }
