@@ -6,9 +6,9 @@ body {
 }
 
 body.bg-inicio{
-  background-image: url('/Inicio/img/bg-body.avif');
+  background-image: url('/img/bg-body.avif');
 }
 
 body.bg-alt{
-  background-image: url('/Inicio/img/bg-body.svg');
+  background-image: url('/img/bg-body.svg');
 }
